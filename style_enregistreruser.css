@@ -1,0 +1,310 @@
+body { background: #222; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 14px }
+
+#userForm {
+  background-color: #222;
+  margin 0 auto;
+  position: relative;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 300px;  
+}
+
+#title {
+  color: #fff;
+  text-align: center;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+#frmSubscribe {
+  top: 0px;
+  left: 50px;
+  width: 450px;
+  height: 300px;
+}
+
+#field-nom {
+  position: absolute;
+  top: 50px;
+    color: rgb(51, 51, 51);
+    height: 40px;
+    width: 400px;
+    text-decoration: none solid rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    z-index: 120;
+}
+
+#field-prenom {
+  position: absolute;
+  top: 100px;
+    color: rgb(51, 51, 51);
+    height: 40px;
+    width: 400px;
+    text-decoration: none solid rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    z-index: 120;
+}
+
+#field-metier {
+  position: absolute;
+  top: 150px;
+    color: rgb(51, 51, 51);
+    height: 40px;
+    width: 400px;
+    text-decoration: none solid rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    z-index: 120;
+}
+
+#field-mail {
+  position: absolute;
+  top: 200px;
+    color: rgb(51, 51, 51);
+    height: 40px;
+    width: 400px;
+    text-decoration: none solid rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    z-index: 120;
+}
+
+#field-login {
+  position: absolute;
+  top: 250px;
+    color: rgb(51, 51, 51);
+    height: 40px;
+    width: 400px;
+    text-decoration: none solid rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    z-index: 120;
+}
+
+#field-password {
+  position: absolute;
+  top: 300px;
+    color: rgb(51, 51, 51);
+    height: 40px;
+    width: 400px;
+    text-decoration: none solid rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}
+
+#field-login:after, #field-password:after, #field-nom:after, #field-prenom:after, #field-metier:after, #field-mail:after{
+    clear: both;
+    color: rgb(51, 51, 51);
+    display: table;
+    text-decoration: none solid rgb(51, 51, 51);
+    width: 400px;
+    content: ' ';
+    border: 0px none rgb(51, 51, 51);
+    outline: rgb(51, 51, 51) none 0px;
+}
+
+#field-login:before, #field-password:before, #field-nom:before, #field-prenom:before, #field-metier:before, #field-mail:before{
+    color: rgb(51, 51, 51);
+    display: table;
+    text-decoration: none solid rgb(51, 51, 51);
+    width: 400px;
+    content: ' ';
+    border: 0px none rgb(51, 51, 51);
+    outline: rgb(51, 51, 51) none 0px;
+}
+
+.userNom {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
+    box-sizing: content-box;
+    height: 30px;
+    max-width: 350px;
+    width: 350px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0px;
+    padding: 4px;
+    transition: background 0.2s linear 0s;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+  color: #777;
+  text-align: center;
+  opacity: 2;
+  outline-color: #222;
+  outline-offset: 0;
+}
+
+.userPrenom {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
+    box-sizing: content-box;
+    height: 30px;
+    max-width: 350px;
+    width: 350px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0px;
+    padding: 4px;
+    transition: background 0.2s linear 0s;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+  color: #777;
+  text-align: center;
+  opacity: 2;
+  outline-color: #222;
+  outline-offset: 0;
+}
+
+.userMetier {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
+    box-sizing: content-box;
+    height: 30px;
+    max-width: 350px;
+    width: 350px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0px;
+    padding: 4px;
+    transition: background 0.2s linear 0s;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+  color: #777;
+  text-align: center;
+  opacity: 2;
+  outline-color: #222;
+  outline-offset: 0;
+}
+
+.userMail {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
+    box-sizing: content-box;
+    height: 30px;
+    max-width: 350px;
+    width: 350px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0px;
+    padding: 4px;
+    transition: background 0.2s linear 0s;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+  color: #777;
+  text-align: center;
+  opacity: 2;
+  outline-color: #222;
+  outline-offset: 0;
+}
+
+.userLogin {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
+    box-sizing: content-box;
+    height: 30px;
+    max-width: 350px;
+    width: 350px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0px;
+    padding: 4px;
+    transition: background 0.2s linear 0s;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+  color: #777;
+  text-align: center;
+  opacity: 2;
+  outline-color: #222;
+  outline-offset: 0;
+}
+
+.userPassword {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
+    box-sizing: content-box;
+    height: 30px;
+    max-width: 350px;
+    width: 350px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0px;
+    padding: 4px;
+    transition: background 0.2s linear 0s;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+  color: #777;
+  text-align: center;
+  opacity: 2;
+  outline-color: #222;
+  outline-offset: 0;
+}
+
+.subscribe-button {
+  position: relative;
+  left: 50px;
+  top: 300px;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
+  box-sizing: content-box;
+  height: 30px;
+  max-width: 350px;
+  width: 350px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0px;
+  padding: 4px;
+  transition: background 0.2s linear 0s;
+  z-index: 100;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #2266AA;
+  color: #fff;
+  text-align: center;
+  opacity: 2;
+  outline-color: #222;
+  outline-offset: 0;
+}
+
