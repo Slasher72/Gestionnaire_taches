@@ -1,10 +1,72 @@
 body { background: #222; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 14px }
-			#tabs { height: 250px; margin: 40px auto 0; box-shadow: 0 0 10px #95b5cd; overflow: auto }
-			.tabs-onglets { background: #649bc5; padding: 5px; float: left; width: 85px}
-			.tabs-onglets.right { float: right }
-			.tabs-onglets a { display: block; background: #5fb0ee; color: #fff; text-decoration: none; padding: 0 10px; height: 30px; line-height: 30px }
-			.tabs-onglets a + a { margin-top: 5px }
-			.tabs-onglets .selected, .tabs-onglets a:hover { background: #fff; color: #5fb0ee; margin-right: -5px }
-			.tabs-onglets.right .selected, .tabs-onglets.right a:hover { margin-right: 0; margin-left: -5px }
-			#contenu { background: #fff; padding: 10px; height: 230px; overflow: auto; }
-			#contenu h1 { margin-top: 0 }
+
+#blue-menu {
+width:600px;
+height:40px;
+margin-top:16px;
+background:#373737;
+background-image:linear-gradient(to bottom, #373737, #242424);
+border-bottom:2px solid #00a2ff;
+
+box-shadow:0px 0px 4px #cccccc;
+-moz-box-shadow:0px 0px 4px #cccccc;
+-webkit-box-shadow:0px 0px 4px #cccccc;
+-o-box-shadow:0px 0px 4px #cccccc;
+
+font: 14px 'Nunito' , sans-serif;
+}
+
+#blue-menu a {
+width:auto;
+height:40px;
+display:inline-block;
+background:transparent;
+overflow:hidden;
+float:left;
+text-decoration:none;
+color:#ffffff;
+}
+
+#blue-menu h5 {
+margin:0px;
+height:40px;
+line-height:40px;
+text-align:center;
+background:#373737;
+background-image:linear-gradient(to bottom, #373737, #242424);
+
+transition:all 0.2s linear;
+-moz-transition:all 0.2s linear;
+-webkit-transition:all 0.2s linear;
+-o-transition:all 0.2s linear;
+}
+
+#blue-menu a:hover h5 {
+margin-top:-40px;
+}
+
+#blue-menu div {
+width:auto;
+height:28px;
+display:block;
+background:#00a2ff;
+overflow:hidden;
+padding-right:4px;
+padding-left:4px;
+padding-top:12px;
+color:#ffffff;
+cursor:pointer;
+
+transition:all 0.2s linear;
+-moz-transition:all 0.2s linear;
+-webkit-transition:all 0.2s linear;
+-o-transition:all 0.2s linear;
+}
+
+#blue-menu a:hover div {
+opacity:1;
+}
+
+h1 {
+    
+}

@@ -1,51 +1,49 @@
 <html>
-<head>
-	<link rel="stylesheet" href="menu.css" type="text/css">
-</head>
-<body>
-<div id="tabs">
-			<div class="tabs-onglets">
-				<a href="#lundi">Lundi</a>
-				<a href="#mardi">Mardi</a>
-				<a href="#mercredi">Mercredi</a>
-				<a href="#jeudi">Jeudi</a>
-				<a href="#vendredi">Vendredi</a>
-				<a href="#samedi">Samedi</a>
-				<a href="#dimanche">Dimanche</a>
-			</div>
-			<div id="contenu">
-				<div id="lundi">
-					<h1>Lundi</h1>
-					<p></p>
-				</div>
-				<div id="mardi">
-					<h1>Mardi</h1>
-					<p>easy98</p>
-				</div>
-				<div id="mercredi">
-					<h1>Mercredi</h1>
-					<p>easy11 </p>
-				</div>
-				<div id="jeudi">
-					<h1>Jeudi</h1>
-					<p>easy1 </p>
-				</div>
-				<div id="vendredi">
-					<h1>Vendredi</h1>
-					<p>easy4</p>
-				</div>
-				<div id="samedi">
-					<h1>Samedi</h1>
-					<p>easy5</p>
-				</div>
-				<div id="dimanche">
-					<h1>Dimanche</h1>
-					<p>easy</p>
-				</div>
-			</div>
-		</div>
-		<script src="http://cdn.infographizm.com/javascript/jquery/jquery.js"></script>
-		<script src="http://cdn.infographizm.com/javascript/jquery/tabs.js"></script>
+  <head>
+    <link rel="stylesheet" href="menu.css" type="text/css">
+  </head>
+  <body>
+      
+<div id="blue-menu">
+    <?php
+    include 'connexionBDD.php';
+    
+    $resultat16 = $connexion->query("SELECT NOM_BRANCHE FROM BRANCHE WHERE NOM_BRANCHE = 'interface homme/machine'");
+        while ($ligne = $resultat16->fetch())
+        {
+            ?><a href="menuInterface_Homme.php">
+            <h5><?php echo $ligne['NOM_BRANCHE'] ?></h5>
+            <div><?php echo $ligne['NOM_BRANCHE'] ?></div>
+            </a>
+            <?php
+        }
+    
+    $resultat17 = $connexion->query("SELECT NOM_BRANCHE FROM BRANCHE WHERE NOM_BRANCHE = 'developpement'");
+        while ($ligne = $resultat17->fetch())
+        {
+            ?><a href="menuDeveloppement.php">
+            <h5><?php echo $ligne['NOM_BRANCHE'] ?></h5>
+            <div><?php echo $ligne['NOM_BRANCHE'] ?></div>
+            </a>
+            <?php          
+        }
+    
+    $resultat18 = $connexion->query("SELECT NOM_BRANCHE FROM BRANCHE WHERE NOM_BRANCHE = 'administration'");
+        while ($ligne = $resultat18->fetch())
+        {
+            ?><a href="menuAdministration.php">
+            <h5><?php echo $ligne['NOM_BRANCHE'] ?></h5>
+            <div><?php echo $ligne['NOM_BRANCHE'] ?></div>
+            </a>
+            <?php
+        }?>
 
-</body>
+    
+</div>
+      
+    <h1>Bienvenue dans votre espace personnel !!
+        Vous pourrez consulter ici les projets des diff&egrave;rentes branches ainsi que les diff&egrave;rentes t&acirc;ches &agrave; effectuer !!</h1>
+        
+      
+  </body>
 </html>

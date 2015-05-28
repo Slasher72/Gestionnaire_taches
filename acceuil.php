@@ -1,10 +1,11 @@
+
 <html>
   <head>
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
     <div id="userLoginForm">
-      <div id="title">Votre site de gestionnaire de tâches</div>
+      <div id="title">Votre site de gestionnaire de t&acirc;ches</div>
 
         <form name="frmLogin" id="frmLogin" method="post" action="verif-authentification.php">
 

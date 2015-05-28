@@ -11,10 +11,10 @@
             <input type="text" id="usernom" name="nom" placeholder="Votre Nom" value="" class="userNom" />
           </div>
           <div id="field-prenom">
-            <input type="text" id="userPrenom" name="prenom" placeholder="Votre Prénom" value="" class="userPrenom" />
+            <input type="text" id="userPrenom" name="prenom" placeholder="Votre Pr&eacute;nom" value="" class="userPrenom" />
           </div>
           <div id="field-metier">
-            <input type="text" id="userMetier" name="metier" placeholder="Votre Métier" value="" class="userMetier" />
+            <input type="text" id="userMetier" name="metier" placeholder="Votre M&eacute;tier" value="" class="userMetier" />
           </div>
           <div id="field-mail">
             <input type="mail" id="userMail" name="mail" placeholder="Votre Mail" value="" class="userMail" />

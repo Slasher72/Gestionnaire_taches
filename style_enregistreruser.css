@@ -1,8 +1,9 @@
-body { background: #222; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 14px }
+body {   background: #222;
+  font: normal normal normal 28px/32px 'Helvetica Neue', Arial, sans-serif; }
 
 #userForm {
   background-color: #222;
-  margin 0 auto;
+  margin: 0 auto;
   position: relative;
   top: 100px;
   margin-left: auto;
@@ -285,7 +286,7 @@ body { background: #222; font-family: "Trebuchet MS", Arial, Helvetica, sans-ser
 .subscribe-button {
   position: relative;
   left: 50px;
-  top: 300px;
+  top: 320px;
   box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.0745098) 0px 1px 0px 0px;
   box-sizing: content-box;
   height: 30px;
